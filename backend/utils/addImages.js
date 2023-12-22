@@ -11,15 +11,15 @@ export const addImages = async (options) => {
           file.path,
           { folder: options.folder }
         );
-        array.push({ id: public_id, scr: secure_url });
+        array.push({ id: public_id, src: secure_url });
       }
-      return array.length > 1 ? array : { id: array[0].id, scr: array[0].scr };
+      return array.length > 1 ? array : { id: array[0].id, src: array[0].src };
     } else {
       const { public_id, secure_url } = await cloudinary.uploader.upload(
         options.path,
         { folder: options.folder }
       );
-      return { id: public_id, scr: secure_url };
+      return { id: public_id, src: secure_url };
     }
   };
   
