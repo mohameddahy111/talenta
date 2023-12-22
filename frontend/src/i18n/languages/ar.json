@@ -1,0 +1,27 @@
+{
+   "g":{
+      "logHeaderTitle" :"مرحبا بيك في لوحة تحكم Talenta" ,
+      "notesFormLogin":"اذا وجهت مشكلة في  التسجيل اتصل بالمشرف"
+   
+   },
+   "dashboard": {
+      "sideMenu": {
+        "AddAdmin": "اضاف ادمن",
+        "AddCustomer": "اضاف عميل",
+        "AddProject": "اضاف مشروع"
+      },
+      "AddProject":{
+         "general": "معلومات عامة"
+       }
+     },
+     "form":{
+       "name":{
+         "en":"الاسم الانجليزي",
+         "ar":" الاسم العربي"
+       }
+     }
+   
+
+    
+  
+}

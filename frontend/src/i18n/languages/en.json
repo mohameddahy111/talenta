@@ -1,0 +1,29 @@
+{
+  "g": {
+    "logHeaderTitle": "Wellcom To Talenta Dashboard",
+    "notesFormLogin": "If You Have Problems In Login Please Call Supervisor"
+  },
+  "dashboard": {
+    "sideMenu": {
+      "AddAdmin": "Add Admin",
+      "AddCustomer": "Add Customer",
+      "AddProject": "Add Project"
+    },
+    "AddProject":{
+      "general": "general",
+      "web":"WebSite development",
+      "mobile":"mobile development"
+    }
+  },
+  "form":{
+    "name":{
+      "en":"English Name",
+      "ar":" Arbic Name"
+    },
+    "discrpion":{
+      "en":"English Discrpion",
+      "ar":"Arbic Discrpion"
+
+    }
+  }
+}
