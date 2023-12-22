@@ -12,7 +12,7 @@ import {useNavigate} from "react-router-dom";
 export default function ProfileAdminMenu({data}) {
   const navigate = useNavigate();
   const {enqueueSnackbar, closeSnackbar} = useSnackbar();
-  const {basicUrl, token, setAdminIfo, setToken} = Store();
+  const {axiosToken, setAdminIfo, setToken} = Store();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -25,9 +25,9 @@ export default function ProfileAdminMenu({data}) {
   const logout = async () => {
     await axios
       .patch(
-        `${basicUrl}/admins`,
+        `/admins`, 
         {},
-        {headers: {Authorization: `Bearer ${token}`}}
+        axiosToken
       )
       .then((res) => {
         if (res.status === 200) {

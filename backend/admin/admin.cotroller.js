@@ -64,3 +64,4 @@ export const adminLogout = errorHandler(async (req, res, next) => {
   }
   res.status(200).send("logged out successfully");
 });
+   
