@@ -8,7 +8,7 @@ import { uploading } from '../middleware/uploading.js'
 const router = express.Router()
 
 router.post('/' , validetor(loginValidtion) , loginAdmin)
-router.post('/add_admin',uploading().single('admin_img'), validetor(addValidtion), addAdmin)
+router.post('/add_admin',auth,  uploading().single('admin_img'), validetor(addValidtion), addAdmin)
 router.get('/admin_info', auth, adminInfo) 
 router.patch('/' , auth , adminLogout)
 export default router

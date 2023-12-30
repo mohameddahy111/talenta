@@ -9,21 +9,51 @@
       "AddCustomer": "Add Customer",
       "AddProject": "Add Project"
     },
-    "AddProject":{
+    "AddProject": {
       "general": "general",
-      "web":"WebSite development",
-      "mobile":"mobile development"
+      "web": "WebSite development",
+      "mobile": "mobile development"
     }
   },
-  "form":{
-    "name":{
-      "en":"English Name",
-      "ar":" Arbic Name"
+  "form": {
+    "name": {
+      "en": "English Name",
+      "ar": " Arbic Name"
     },
-    "discrpion":{
-      "en":"English Discrpion",
-      "ar":"Arbic Discrpion"
-
+    "discrpion": {
+      "en": "English Discrpion",
+      "ar": "Arbic Discrpion"
+    }
+  },
+  "Homepage": {
+    "mastr_title": " Software House you can count on",
+    "sub_title": "We fabricate vibrant websites and mobile apps with digital plans. Get your customers impressed and leap off the competition.",
+    "button_service": "Talenta Services",
+    "Our_Services": "Our Services",
+    "sub_title_Services": "The destination to make your business digital-ready",
+    "tab_mobile_services": "Mobile Apps Development",
+    "tab_maintenance_services": "Website and Mobile Maintenance",
+    "tab_designing_services": "Branding and Designing",
+    "tab_marketing_services": "Digital Marketing",
+    "tab_web_services": "Web Development",
+    "more_about": "More About"
+  },
+  "notes": {
+    "note_1": "Websites promote you 24/7, No employee will do that",
+    "note_2": "Websites promote you 24/7, No employee will do that"
+  },
+  "how_are_we": {
+    "title": "Who Are We",
+    "pragraph": "With more than eight years of experience, we are professionals in different aspects of the digital market, thriving after introducing a whole new level of online services, to get customers and you connected in the best ways ever found, so get your sales up, your business expanded and put you on the Winner top!"
+  },
+  "why-choose-us": {
+    "title": "Why Choose Us ",
+    "pragraph": "At Talenta, you are not our client, we're partners, with a new peak to seek, a new online entity to build, a unique experience to offer, all with a goal front and center: Your Success.",
+    "QualtyBox": {
+      "Quality_Standards": {"title":"Quality Standards","pragraph":"With passion and expertise, we're always developing in our processes to get more done with achieving more than what you expect, because we are seeking to build online structures with the latest technologies and market standards."},
+      "Strategic_Planning": {"title":"Strategic Planning","pragraph":"When we start a new project in any field, the PLAN gets written in BOLD ALL-CAPS letters, so we never take a step out of it, that's why we are on track getting forward! "},
+      "High_Experience":{"title": "High Experience","pragraph":"Experience in website development and marketing since 2012 and a list of clients exceeding 200 customers."},
+      "Creativity_And_Innovation":{"title":"Creativity And Innovation","pragraph":"We love what we do, so we do it with love, fabricating new solutions to get your needs met with different angles to see the problems!"}
     }
   }
 }

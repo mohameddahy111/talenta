@@ -1,23 +1,19 @@
-import React, {useState} from "react";
 import {
   Box,
-  FilledInput,
   Grid,
-  InputBase,
   List,
   ListItem,
   TextField,
-  Typography
+  Typography,Button
 } from "@mui/material";
 import {useTranslation} from "react-i18next";
 import * as yup from "yup";
 import {useFormik} from "formik";
-import {Button} from "@mui/base";
 import axios from "axios";
-// import { Store } from "../../context/DataStore";
+import { Store } from "../../context/DataStore";
 
 export default function AddProject() {
-  // const {axiosToken}=Store()
+  const {token}=Store()
   const formData = new FormData();
   const validationSchema = yup.object({
     name: yup.object({
@@ -112,7 +108,7 @@ export default function AddProject() {
       );
       await axios
         .post("/project/", formData, {
-          headers: {"Content-Type": "multipart/form-data"}
+          headers: {"Content-Type": "multipart/form-data" , Authorization : `Bearer ${token}`}
         })
         .then((res) => {
           console.log(res);
@@ -124,7 +120,6 @@ export default function AddProject() {
   });
   const {i18n} = useTranslation();
   const imagesAdd = (e, f) => {
-    console.log(f);
     if (f.length > 1) {
       formik.values[e] = f;
     } else {
@@ -488,7 +483,7 @@ export default function AddProject() {
             </Grid>
           </Grid>
         </Grid>
-        <Button type="submit">add</Button>
+        <Button variant='contained' type="submit">add</Button>
       </form>
     </Box>
   );

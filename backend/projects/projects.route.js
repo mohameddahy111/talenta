@@ -5,7 +5,7 @@ import { addProject } from "./projects.controllrt.js";
 const router = express.Router();
 router.post(
   "/",
- 
+  auth,
   uploading().fields([
     {name: "logo", maxCount: 1},
     {name: "web_min_img", maxCount: 1},

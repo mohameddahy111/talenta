@@ -1,9 +1,11 @@
+import { useMediaQuery } from "@mui/material";
 import axios from "axios";
 import { useSnackbar } from "notistack";
 import {createContext, useContext, useEffect, useState} from "react";
 
 const DataStore = createContext();
 export const DataStoreProvider = ({ children }) => {
+  const mobileDivice = useMediaQuery('(max-width :600px)')
   const {enqueueSnackbar}=useSnackbar()
   const [token, setToken] = useState(
     localStorage.token ? JSON.parse(localStorage.token) : null
@@ -32,7 +34,7 @@ export const DataStoreProvider = ({ children }) => {
   }, [token]);
   return (
     <DataStore.Provider
-      value={{ token, setToken, adminIfo, setAdminIfo ,axiosToken }}
+      value={{ token, setToken, adminIfo, setAdminIfo ,axiosToken  , mobileDivice}}
     >
       {children}
     </DataStore.Provider>
